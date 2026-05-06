@@ -3,17 +3,23 @@
 <section class="page-header">
   <p class="eyebrow">Admin dashboard</p>
   <h1>Study Girl safety and demo overview</h1>
-  <p>Use Django admin for detailed editing. This page gives ministry-demo statistics at a glance.</p>
+  <p>Staff/admin users approve tutor accounts here. Tutors stay pending until a staff member approves their application.</p>
 </section>
 <section class="band">
-  <div class="section-heading"><p class="eyebrow">Tutor approvals</p><h2>Pending applications</h2></div>
+  <div class="section-heading">
+    <p class="eyebrow">Tutor approvals</p>
+    <h2>Pending tutor applications</h2>
+    <p>Review each tutor applicant, then use the approval button below to make that tutor visible to students.</p>
+  </div>
   <div class="content-grid">
     {% for application in pending_applications %}
       <article class="card">
         <h3>{{ application.user.username }}</h3>
         <p>Ready checklist: {% if application.ready_for_review %}complete{% else %}incomplete{% endif %}</p>
-        <a href="{% url 'review_tutor_application' application.id 'approve' %}">Approve</a> -
-        <a href="{% url 'review_tutor_application' application.id 'reject' %}">Reject</a>
+        <div class="actions compact">
+          <a class="button small" href="{% url 'review_tutor_application' application.id 'approve' %}">Approve tutor</a>
+          <a class="button secondary small" href="{% url 'review_tutor_application' application.id 'reject' %}">Reject</a>
+        </div>
       </article>
     {% empty %}
       <p>No pending tutor applications.</p>

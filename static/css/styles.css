@@ -94,6 +94,7 @@ main { min-height: 70vh; }
 .lead { font-size: 1.18rem; max-width: 680px; }
 .eyebrow { color: var(--mint); text-transform: uppercase; font-size: .78rem; font-weight: 800; letter-spacing: 0; margin: 0 0 8px; }
 .actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; }
+.actions.compact { margin-top: 12px; }
 .button, button {
   display: inline-flex;
   align-items: center;
