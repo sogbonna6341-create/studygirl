@@ -4,8 +4,8 @@ Study Girl is a Python-first Django MVP for high school female students at Wesle
 
 Motto: **SBS - Students Becoming Sisters**
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/WealthGate/Study_Girl)
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=dockerfile&repository=github.com/WealthGate/Study_Girl&branch=main&name=studygirl&ports=8000;http;/&env[DEBUG]=False&env[ALLOWED_HOSTS]=.koyeb.app,localhost,127.0.0.1)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/sogbonna6341-create/studygirl)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&builder=dockerfile&repository=github.com/sogbonna6341-create/studygirl&branch=main&name=studygirl&ports=8000;http;/&env[DEBUG]=False&env[ALLOWED_HOSTS]=.koyeb.app,localhost,127.0.0.1)
 
 Planned public test URL after Koyeb deployment:
 
@@ -182,7 +182,7 @@ The repository includes `render.yaml`, so Render can create the web service and 
 1. Open the GitHub repository:
 
 ```text
-https://github.com/WealthGate/Study_Girl
+https://github.com/sogbonna6341-create/studygirl
 ```
 
 2. Click the **Deploy to Render** button near the top of this README.
